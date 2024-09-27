@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter Suhu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio autoplay>
+        <source src="audio.mp3" type="audio/mpeg">
+        <source src="audio.ogg" type="audio/ogg">
+        Your browser does not support audio. Please update your browser if you consern.
+    </audio>
+    
+    <div class="container">
+        <div class="converter-box">
+            <div class="title">
+                <h2>Converter Suhu</h2>
+            </div>
+            <div class="form-group">
+                <label for="inputSuhu">Masukkan Suhu:</label>
+                <input type="number" id="inputSuhu" placeholder="Contoh: 38">
+            </div>
+            <div class="form-group">    
+                <label for="inputIndeks">Pilih Skala:</label>
+                <select id="inputIndeks">
+                    <option value="C">Celcius</option>
+                    <option value="R">Reamur</option>
+                    <option value="F">Fahrenheit</option>
+                    <option value="K">Kelvin</option>
+                </select>
+            </div>
+            <div class="onClick">
+                <button onclick="konversiSuhu()">Konversi</button>
+            </div>
+            <div class="result" id="result">
+                Hasil konversi akan muncul di sini.
+            </div>
+        </div>
+        
+        <div class="riwayat-box">
+            <h3>Riwayat Konversi</h3>
+            <div id="riwayat"></div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
