@@ -40,8 +40,8 @@ function tampilkanRiwayat() {
     const riwayatDiv = document.getElementById("riwayat");
     riwayatDiv.innerHTML = ""; // Kosongkan dulu
 
-    riwayatKonversi.forEach((item, index) => {
-        riwayatDiv.innerHTML += `<div class="riwayat-item">${index + 1}. ${item}</div><br>`;
+    riwayatKonversi.forEach((item) => {
+        riwayatDiv.innerHTML += `<div class="riwayat-item">${item}</div><br>`;
     });
 }
 
