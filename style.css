@@ -11,7 +11,7 @@ body {
 
 .container {
     display: flex;
-    flex-direction:column;
+    flex-direction: row;
     padding: 20px;
     gap: 30px; /* Jarak antara converter dan riwayat */
 }
@@ -25,14 +25,13 @@ body {
 }
 
 .riwayat-box {
-    align-self: center;
     font-size: large;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 200px;
     max-height: 400px;
     overflow-x: auto; /* Agar riwayat bisa di-scroll jika terlalu panjang */
 }
